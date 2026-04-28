@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>OG Image · Pedro Serrano</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=JetBrains+Mono:wght@500&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #0B0E14;
+    --surface: #11151E;
+    --line: #1F2630;
+    --line-2: #2A3340;
+    --text: #ECEFF4;
+    --text-dim: #A8B0BF;
+    --muted: #6B7280;
+    --accent: #6EE7F9;
+    --accent-2: #A78BFA;
+    --gold: #D9B26A;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1200px; height: 630px; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 70px;
+  }
+  /* grid bg */
+  body::before {
+    content: "";
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse at 50% 50%, #000 50%, transparent 100%);
+  }
+  /* glow */
+  body::after {
+    content: "";
+    position: absolute;
+    width: 720px; height: 720px;
+    right: -180px; top: -180px;
+    background: radial-gradient(circle, rgba(167,139,250,.18), transparent 60%);
+    filter: blur(20px);
+  }
+  .left {
+    flex: 1;
+    display: flex; flex-direction: column;
+    gap: 24px;
+    z-index: 2;
+  }
+  .eyebrow {
+    display: inline-flex;
+    align-self: flex-start;
+    align-items: center; gap: 10px;
+    padding: 8px 16px;
+    border: 1px solid var(--line-2);
+    border-radius: 999px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    color: var(--text-dim);
+  }
+  .dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: #4ade80;
+    box-shadow: 0 0 0 4px rgba(74,222,128,.18);
+  }
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 1.04;
+    letter-spacing: -0.025em;
+  }
+  h1 .accent {
+    background: linear-gradient(120deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text; background-clip: text;
+    color: transparent;
+  }
+  .role {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 18px;
+    color: var(--text-dim);
+    letter-spacing: 0.04em;
+    margin-top: 8px;
+  }
+  .role span { color: var(--accent); }
+  .footer-row {
+    display: flex; align-items: center; gap: 18px;
+    margin-top: 12px;
+  }
+  .name {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: -0.01em;
+  }
+  .domain {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 16px;
+    color: var(--muted);
+    padding-left: 18px;
+    border-left: 1px solid var(--line-2);
+  }
+  .right {
+    width: 340px;
+    height: 340px;
+    flex-shrink: 0;
+    margin-left: 50px;
+    position: relative;
+    z-index: 2;
+  }
+  .photo-frame {
+    width: 100%; height: 100%;
+    border-radius: 50%;
+    border: 2px solid var(--line-2);
+    box-shadow: 0 0 0 12px rgba(110,231,249,.08), 0 0 0 1px rgba(110,231,249,.25);
+    overflow: hidden;
+    position: relative;
+  }
+  .photo-frame img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .photo-frame::after {
+    content: "";
+    position: absolute; inset: 0;
+    border-radius: 50%;
+    background: linear-gradient(135deg, transparent 60%, rgba(11,14,20,.55));
+  }
+  .badge {
+    position: absolute;
+    bottom: -8px; left: 50%;
+    transform: translateX(-50%);
+    background: var(--surface);
+    border: 1px solid var(--line-2);
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: var(--accent);
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+  }
+</style>
+</head>
+<body>
+  <div class="left">
+    <span class="eyebrow"><span class="dot"></span>CTO &amp; COO · Madrid / Málaga</span>
+    <h1>
+      Estrategia tecnológica<br />
+      que se convierte en <span class="accent">margen.</span>
+    </h1>
+    <p class="role">14+ años · <span>Azure</span> · <span>.NET</span> · <span>cloud-native</span> · Executive MBA</p>
+    <div class="footer-row">
+      <span class="name">Pedro Serrano</span>
+      <span class="domain">pedroserrano.tech</span>
+    </div>
+  </div>
+  <div class="right">
+    <div class="photo-frame">
+      <img src="pedro-serrano.jpg" alt="" />
+    </div>
+    <span class="badge">// profile.png</span>
+  </div>
+</body>
+</html>

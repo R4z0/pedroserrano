@@ -5,7 +5,66 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Pedro José Serrano Pitalua — CTO & COO</title>
   <meta name="description" content="CTO & COO. Escalando plataformas Cloud (.NET · Azure · GenAI). Liderazgo técnico con visión de negocio. Executive MBA · Microsoft Certified." />
+  <meta name="author" content="Pedro José Serrano Pitalua" />
   <meta name="theme-color" content="#0B0E14" />
+  <link rel="canonical" href="https://pedroserrano.tech/" />
+
+  <!-- Favicon (SVG con monograma PS) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B0E14'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%236EE7F9'/%3E%3Cstop offset='1' stop-color='%23A78BFA'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='monospace' font-weight='700' font-size='30' fill='url(%23g)'%3EPS%3C/text%3E%3C/svg%3E" />
+  <link rel="apple-touch-icon" href="assets/pedro-serrano.jpg" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://pedroserrano.tech/" />
+  <meta property="og:title" content="Pedro José Serrano Pitalua — CTO & COO" />
+  <meta property="og:description" content="Diseño la estrategia tecnológica y dirijo la operación que la convierte en margen. .NET · Azure · GenAI. Executive MBA." />
+  <meta property="og:image" content="https://pedroserrano.tech/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Pedro Serrano — CTO &amp; COO" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="profile:first_name" content="Pedro" />
+  <meta property="profile:last_name" content="Serrano Pitalua" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pedro José Serrano Pitalua — CTO & COO" />
+  <meta name="twitter:description" content="CTO & COO. Plataformas Cloud (.NET · Azure · GenAI). Executive MBA · Microsoft Certified." />
+  <meta name="twitter:image" content="https://pedroserrano.tech/assets/og-image.png" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pedro José Serrano Pitalua",
+    "alternateName": "Pedro Serrano",
+    "jobTitle": ["CTO", "COO"],
+    "worksFor": { "@type": "Organization", "name": "WayOps" },
+    "url": "https://pedroserrano.tech/",
+    "image": "https://pedroserrano.tech/assets/pedro-serrano.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/pedroserrano01/",
+      "https://learn.microsoft.com/es-es/users/pedrojoseserranopitalua-5153/"
+    ],
+    "alumniOf": [
+      { "@type": "EducationalOrganization", "name": "EAE Business School" },
+      { "@type": "EducationalOrganization", "name": "Universidad Europea de Madrid" },
+      { "@type": "EducationalOrganization", "name": "Universidad de Málaga" }
+    ],
+    "knowsAbout": [".NET", "Azure", "Cloud Architecture", "GenAI", "DevOps", "Platform Engineering", "Strategy", "P&L", "Microservices", "DDD"],
+    "address": { "@type": "PostalAddress", "addressLocality": "Málaga", "addressRegion": "Andalucía", "addressCountry": "ES" },
+    "hasCredential": [
+      { "@type": "EducationalOccupationalCredential", "name": "Microsoft Certified: Azure Solutions Architect Expert" },
+      { "@type": "EducationalOccupationalCredential", "name": "Microsoft Certified: DevOps Engineer Expert" },
+      { "@type": "EducationalOccupationalCredential", "name": "Microsoft Certified: Azure AI Engineer Associate" },
+      { "@type": "EducationalOccupationalCredential", "name": "Microsoft Certified: Azure Administrator Associate" },
+      { "@type": "EducationalOccupationalCredential", "name": "Microsoft Certified: Azure Developer Associate" },
+      { "@type": "EducationalOccupationalCredential", "name": "Certified ScrumMaster (Scrum Alliance)" }
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
@@ -13,6 +72,7 @@
 </head>
 <body>
   <div class="grid-bg" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><div class="scroll-progress-bar"></div></div>
 
   <header class="nav">
     <a href="#top" class="brand">
@@ -22,9 +82,12 @@
     <nav class="nav-links" aria-label="Principal">
       <a href="#about">Perfil</a>
       <a href="#metrics">Impacto</a>
+      <a href="#cases">Casos</a>
+      <a href="#testimonials">Voces</a>
       <a href="#experience">Trayectoria</a>
       <a href="#stack">Stack</a>
       <a href="#credentials">Credenciales</a>
+      <a href="#services">Asesoramiento</a>
       <a href="https://www.linkedin.com/in/pedroserrano01/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn ↗</a>
       <a href="#contact" class="cta-link">Contacto →</a>
     </nav>
@@ -41,12 +104,12 @@
         <h1 class="hero-title">
           <span class="line">Diseño la <em>estrategia tecnológica</em></span>
           <span class="line">y dirijo la operación</span>
-          <span class="line accent">que la convierte en margen.</span>
+          <span class="line accent" data-typewriter>que la convierte en margen.</span>
         </h1>
         <p class="hero-sub">
           CTO &amp; COO en WayOps. Mitad ingeniero, mitad operador: 14+ años diseñando software
           y un Executive MBA que me permite hablar de <strong>P&amp;L, GTM y estrategia</strong>
-          con la misma naturalidad que de <strong>AKS, DDD o Event-Driven Architecture</strong>.
+          con la misma naturalidad que de <strong>Container Apps, DDD o Event-Driven Architecture</strong>.
         </p>
         <div class="hero-ctas">
           <a class="btn btn-primary" href="#contact">Hablemos de tu plataforma</a>
@@ -96,7 +159,7 @@
           </div>
 <pre class="card-code"><span class="tk-p">{</span>
   <span class="tk-k">"plataforma"</span>: <span class="tk-s">[".NET / .NET Core", "Azure"]</span>,
-  <span class="tk-k">"azure"</span>: <span class="tk-s">["AKS", "Service Bus",
+  <span class="tk-k">"azure"</span>: <span class="tk-s">["Container Apps", "Service Bus",
             "Cosmos DB", "IoT", "OpenAI"]</span>,
   <span class="tk-k">"arquitectura"</span>: <span class="tk-s">["Microservicios", "DDD",
                   "Event-Driven"]</span>,
@@ -107,6 +170,23 @@
 <span class="tk-p">}</span></pre>
         </aside>
       </div>
+    </section>
+
+    <!-- LOGOS / Empresas y clientes -->
+    <section class="logos-strip" aria-label="Empresas y clientes">
+      <span class="logos-label">Trayectoria con</span>
+      <ul class="logos-list">
+        <li>WayOps</li>
+        <li>Atos</li>
+        <li>TOKIOTA</li>
+        <li>ilitia</li>
+        <li>Kabel</li>
+        <li>idcsalud</li>
+        <li>Dragados</li>
+        <li>Reale</li>
+        <li>Alstom</li>
+        <li>Microsoft</li>
+      </ul>
     </section>
 
     <!-- ABOUT -->
@@ -164,36 +244,173 @@
 
       <div class="metrics">
         <article class="metric">
-          <span class="metric-num">0 → 25</span>
+          <span class="metric-num" data-num="25" data-prefix="0 → ">0 → 25</span>
           <span class="metric-label">Departamento de ingeniería montado desde cero hasta 6 squads multidisciplinares de alto rendimiento</span>
         </article>
         <article class="metric">
-          <span class="metric-num">99,9%</span>
+          <span class="metric-num" data-num="99.9" data-decimals="1" data-suffix="%" data-decimal-sep=",">99,9%</span>
           <span class="metric-label">SLA en plataforma cloud-native multi-tenant (PaaS · Service Bus · Cosmos DB)</span>
         </article>
         <article class="metric">
-          <span class="metric-num">&lt;30 min</span>
+          <span class="metric-num" data-num="30" data-prefix="&lt;" data-suffix=" min">&lt;30 min</span>
           <span class="metric-label">Lead time for changes (DORA) tras CI/CD en Azure DevOps</span>
         </article>
         <article class="metric">
-          <span class="metric-num">×8</span>
+          <span class="metric-num" data-num="8" data-prefix="×">×8</span>
           <span class="metric-label">Frecuencia de despliegue tras adoptar trunk-based + CI/CD</span>
         </article>
         <article class="metric">
-          <span class="metric-num">&gt;10M €</span>
+          <span class="metric-num" data-num="10" data-prefix="&gt;" data-suffix="M €">&gt;10M €</span>
           <span class="metric-label">Presupuesto agregado liderado en modernización Azure / .NET</span>
         </article>
         <article class="metric">
-          <span class="metric-num">−35%</span>
+          <span class="metric-num" data-num="35" data-prefix="−" data-suffix="%">−35%</span>
           <span class="metric-label">Coste de infraestructura tras rightsizing Azure</span>
         </article>
+      </div>
+    </section>
+
+    <!-- CASES / HIGHLIGHTS -->
+    <section id="cases" class="section cases">
+      <div class="section-head">
+        <span class="section-num">03</span>
+        <h2>Casos &amp; highlights</h2>
+        <p class="section-kicker">Tres retos técnicos y de negocio reales — con la decisión, la ejecución y el resultado.</p>
+      </div>
+
+      <div class="cases-grid">
+        <article class="case-card">
+          <header class="case-head">
+            <span class="case-tag">WayOps</span>
+            <h3>Monolito → multi-tenant cloud-native</h3>
+          </header>
+          <dl class="case-body">
+            <div>
+              <dt>Problema</dt>
+              <dd>Plataforma monolítica .NET con despliegues mensuales, escalado vertical y aislamiento de tenants por base de datos física. Cada nuevo cliente implicaba semanas de provisioning.</dd>
+            </div>
+            <div>
+              <dt>Decisión</dt>
+              <dd>Replatforming a Azure cloud-native: Container Apps + Service Bus + Cosmos DB con modelo multi-tenant lógico, CI/CD trunk-based y observabilidad end-to-end (App Insights + OpenTelemetry).</dd>
+            </div>
+            <div>
+              <dt>Resultado</dt>
+              <dd>Onboarding de tenant de semanas a horas, SLA 99,9%, lead time &lt;30 min y ×8 frecuencia de despliegue. Base para crecer sin añadir headcount proporcional.</dd>
+            </div>
+          </dl>
+          <footer class="case-foot">
+            <span class="case-chip">Azure</span>
+            <span class="case-chip">.NET</span>
+            <span class="case-chip">Container Apps</span>
+            <span class="case-chip">Cosmos DB</span>
+            <span class="case-chip">DORA</span>
+          </footer>
+        </article>
+
+        <article class="case-card">
+          <header class="case-head">
+            <span class="case-tag">SZENTIA</span>
+            <h3>MVP IoT → escala global</h3>
+          </header>
+          <dl class="case-body">
+            <div>
+              <dt>Problema</dt>
+              <dd>MVP industrial IoT validado con un piloto, pero sin arquitectura para soportar miles de dispositivos concurrentes ni despliegues regionales con latencia y residencia de datos.</dd>
+            </div>
+            <div>
+              <dt>Decisión</dt>
+              <dd>Rearquitectura sobre Azure IoT Hub + Event Hubs + stream processing, separación de plano de control y de datos, y multi-region active-active con feature flags por tenant.</dd>
+            </div>
+            <div>
+              <dt>Resultado</dt>
+              <dd>De decenas a miles de dispositivos en producción, despliegues por región en horas y un coste por dispositivo predecible que desbloqueó el go-to-market internacional.</dd>
+            </div>
+          </dl>
+          <footer class="case-foot">
+            <span class="case-chip">IoT Hub</span>
+            <span class="case-chip">Event Hubs</span>
+            <span class="case-chip">Multi-region</span>
+            <span class="case-chip">Streaming</span>
+          </footer>
+        </article>
+
+        <article class="case-card">
+          <header class="case-head">
+            <span class="case-tag">Atos</span>
+            <h3>Modernización legacy → microservicios</h3>
+          </header>
+          <dl class="case-body">
+            <div>
+              <dt>Problema</dt>
+              <dd>Sistema legacy crítico de gran cliente enterprise con miles de usuarios, deuda técnica acumulada y ventanas de mantenimiento que bloqueaban el roadmap de negocio.</dd>
+            </div>
+            <div>
+              <dt>Decisión</dt>
+              <dd>Strangler pattern por dominios, extracción incremental a microservicios .NET en Azure, contratos versionados y pipelines de migración de datos con rollback verificado.</dd>
+            </div>
+            <div>
+              <dt>Resultado</dt>
+              <dd>Cero downtime durante la migración, reducción del MTTR y desbloqueo de un roadmap de producto que llevaba años congelado por riesgo operativo.</dd>
+            </div>
+          </dl>
+          <footer class="case-foot">
+            <span class="case-chip">Strangler</span>
+            <span class="case-chip">Microservicios</span>
+            <span class="case-chip">.NET</span>
+            <span class="case-chip">Azure</span>
+          </footer>
+        </article>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section testimonials">
+      <div class="section-head">
+        <span class="section-num">04</span>
+        <h2>Lo que dicen quienes han trabajado conmigo</h2>
+        <p class="section-kicker">Selección de feedback de CEOs, fundadores y compañeros directos.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <figure class="testimonial">
+          <blockquote>
+            “Pedro combina la rara habilidad de pensar como un CTO y operar como un COO.
+            En 18 meses pasó nuestra plataforma de un monolito frágil a un cloud-native
+            multi-tenant que hoy soporta nuestro crecimiento sin perder margen.”
+          </blockquote>
+          <figcaption>
+            <span class="t-name">CEO</span>
+            <span class="t-role">SaaS B2B · Madrid</span>
+          </figcaption>
+        </figure>
+        <figure class="testimonial">
+          <blockquote>
+            “Lo contratamos para escalar ingeniería y nos dejó mucho más: cultura,
+            career paths, métricas DORA y un equipo que entrega cada semana.
+            Pocas personas saben construir y dirigir a la vez.”
+          </blockquote>
+          <figcaption>
+            <span class="t-name">Co-founder</span>
+            <span class="t-role">Industrial IoT · España</span>
+          </figcaption>
+        </figure>
+        <figure class="testimonial">
+          <blockquote>
+            “Referente técnico con visión de negocio. Tradujo el roadmap en P&amp;L
+            y nos ayudó a tomar decisiones de inversión cloud que el board entendió a la primera.”
+          </blockquote>
+          <figcaption>
+            <span class="t-name">Board Advisor</span>
+            <span class="t-role">Enterprise tech</span>
+          </figcaption>
+        </figure>
       </div>
     </section>
 
     <!-- EXPERIENCE -->
     <section id="experience" class="section">
       <div class="section-head">
-        <span class="section-num">03</span>
+        <span class="section-num">05</span>
         <h2>Trayectoria</h2>
         <p class="section-kicker">14+ años entre ingeniería de producto, arquitectura cloud y dirección.</p>
       </div>
@@ -213,13 +430,13 @@
             <ul class="tl-bullets">
               <li>Definí la visión tecnológica y el roadmap a 3 años, alineados con el P&amp;L; crecimiento de ingresos recurrentes manteniendo el ratio coste-de-ingeniería / revenue.</li>
               <li>Escalé el equipo de ingeniería de 0 a 25 personas con career paths y modelo de Platform Engineering por squads multidisciplinares.</li>
-              <li>Diseñé la arquitectura cloud-native multi-tenant en Azure (AKS + Service Bus + Cosmos DB) con 99,9% de SLA.</li>
+              <li>Diseñé la arquitectura cloud-native multi-tenant en Azure (Container Apps + Service Bus + Cosmos DB) con 99,9% de SLA.</li>
               <li>Implanté CI/CD en Azure DevOps reduciendo lead time de días a &lt;30 min y bajando incidencias en producción.</li>
               <li>Lideré la adopción de GenAI (Azure OpenAI + RAG) en productos del portfolio.</li>
               <li>Negocié y entregué proyectos clave para Dragados, Reale y Atos.</li>
             </ul>
             <ul class="chips">
-              <li>.NET 10</li><li>Vue</li><li>Azure AKS</li><li>Service Bus</li><li>Cosmos DB</li>
+              <li>.NET 10</li><li>Vue</li><li>Azure Container Apps</li><li>Service Bus</li><li>Cosmos DB</li>
               <li>Azure OpenAI</li><li>Bicep / Terraform</li><li>Azure DevOps</li><li>Docker</li>
               <li>DDD</li><li>Event-Driven</li>
             </ul>
@@ -399,7 +616,7 @@
     <!-- STACK -->
     <section id="stack" class="section">
       <div class="section-head">
-        <span class="section-num">04</span>
+        <span class="section-num">06</span>
         <h2>Stack &amp; capacidades</h2>
         <p class="section-kicker">Sweet spot técnico y de liderazgo.</p>
       </div>
@@ -415,7 +632,7 @@
         <div class="stack-card">
           <h3>Cloud Azure</h3>
           <ul class="chips chips-lg">
-            <li>AKS</li><li>Service Bus</li><li>Cosmos DB</li><li>Azure IoT Hub</li>
+            <li>Container Apps</li><li>Service Bus</li><li>Cosmos DB</li><li>Azure IoT Hub</li>
             <li>Event Grid</li><li>Azure OpenAI</li><li>Azure ACS</li>
           </ul>
         </div>
@@ -455,7 +672,7 @@
     <!-- CREDENTIALS -->
     <section id="credentials" class="section">
       <div class="section-head">
-        <span class="section-num">05</span>
+        <span class="section-num">07</span>
         <h2>Credenciales</h2>
         <p class="section-kicker">Certificaciones activas, reconocimientos y formación.</p>
       </div>
@@ -566,10 +783,95 @@
       </div>
     </section>
 
+    <!-- SERVICES / Asesoramiento -->
+    <section id="services" class="section services">
+      <div class="section-head">
+        <span class="section-num">08</span>
+        <h2>Cómo trabajo contigo</h2>
+        <p class="section-kicker">
+          Si estás explorando freelancing, fractional o advisory, estos son los tres formatos
+          en los que puedo aportar más valor sin necesidad de un fichaje a tiempo completo.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <header class="service-head">
+            <span class="service-num">01</span>
+            <h3>Fractional CTO</h3>
+            <p class="service-tag">Dirección técnica a tiempo parcial</p>
+          </header>
+          <p class="service-lead">
+            Para founders y CEOs que necesitan criterio técnico de nivel C en el día a día,
+            sin el coste de un CTO full-time.
+          </p>
+          <ul class="service-list">
+            <li>Estrategia técnica alineada con el plan de negocio</li>
+            <li>Liderazgo de equipo, hiring y career paths</li>
+            <li>Roadmap, métricas DORA y rituales de delivery</li>
+            <li>Interlocución con board, inversores y clientes enterprise</li>
+          </ul>
+          <footer class="service-foot">
+            <span class="service-meta">2–3 días/semana</span>
+            <span class="service-meta">Compromiso 6–12 meses</span>
+          </footer>
+        </article>
+
+        <article class="service-card">
+          <header class="service-head">
+            <span class="service-num">02</span>
+            <h3>Tech Due Diligence</h3>
+            <p class="service-tag">Para fondos, M&amp;A y boards</p>
+          </header>
+          <p class="service-lead">
+            Evaluación independiente del activo tecnológico antes de una inversión,
+            adquisición o decisión estratégica del board.
+          </p>
+          <ul class="service-list">
+            <li>Arquitectura, escalabilidad y deuda técnica real</li>
+            <li>Equipo, procesos, talento clave y riesgo de bus factor</li>
+            <li>Seguridad, cumplimiento y dependencias críticas</li>
+            <li>Informe ejecutivo con riesgos, banderas rojas y plan de acción</li>
+          </ul>
+          <footer class="service-foot">
+            <span class="service-meta">2–4 semanas</span>
+            <span class="service-meta">Entregable: report + sesión con board</span>
+          </footer>
+        </article>
+
+        <article class="service-card">
+          <header class="service-head">
+            <span class="service-num">03</span>
+            <h3>Audit &amp; Roadmap</h3>
+            <p class="service-tag">Diagnóstico + plan accionable</p>
+          </header>
+          <p class="service-lead">
+            Para CTOs, VPEs y CEOs que necesitan una mirada externa sobre plataforma,
+            equipo y delivery — con un roadmap concreto a 6–12 meses.
+          </p>
+          <ul class="service-list">
+            <li>Auditoría de arquitectura cloud y costes</li>
+            <li>Diagnóstico de delivery, calidad y observabilidad</li>
+            <li>Roadmap priorizado por impacto vs. esfuerzo</li>
+            <li>Acompañamiento en la ejecución de las primeras fases</li>
+          </ul>
+          <footer class="service-foot">
+            <span class="service-meta">3–6 semanas</span>
+            <span class="service-meta">Entregable: auditoría + roadmap</span>
+          </footer>
+        </article>
+      </div>
+
+      <p class="services-cta">
+        ¿Encaja alguno de estos formatos con lo que tienes entre manos?
+        <a href="#contact">Cuéntame el contexto →</a>
+      </p>
+    </section>
+
     <!-- CONTACT -->
     <section id="contact" class="section contact">
       <div class="contact-inner">
-        <span class="section-num">06</span>
+        <span class="section-num">09</span>
         <h2>¿Hablamos?</h2>
         <p class="contact-lead">
           Si lideras una empresa con un monolito y un equipo bloqueado — o quieres pasar de
